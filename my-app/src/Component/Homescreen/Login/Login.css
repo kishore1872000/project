@@ -1,0 +1,118 @@
+.Login-container {
+  text-align: center;
+}
+.Login-headers{
+  position: absolute; 
+  top: 10px; 
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 24px;
+  font-weight: bold;
+  color: #355c7d;
+}
+.avatar {
+  width: 100px;
+  height: 100px;
+  background: #d9e4ea;
+  border-radius: 50%;
+  margin: 0 auto 20px;
+}
+.login-image{
+  width: 100px;
+  height: 100px;
+  background: #d9e4ea;
+  border-radius: 50%;
+  margin: 0 auto 20px;
+}
+h2 {
+  margin: 0;
+  color: #355c7d;
+}
+
+p {
+  margin: 5px 0 20px;
+  color: #6c7a89;
+}
+
+input {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: 2px solid #6c7a89;
+  border-radius: 25px;
+  outline: none;
+  box-sizing: border-box;
+}
+
+.Loginbutton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 12px;
+  margin-top: 20px;
+  background: #6c8ebf;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.Loginbutton:hover {
+  background: #5a7ea5;
+}
+
+.Loginbutton svg {
+  margin-right: 8px;
+}
+
+@media (min-width: 1024px) {
+  .Login-container {
+    max-width: 400px;
+    margin: 50px auto;
+  }
+
+  h2 {
+    font-size: 28px;
+  }
+
+  input, .Loginbutton {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 1023px) {
+  .Login-container {
+    max-width: 80%;
+    margin: 40px auto;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+
+  input, .Loginbutton {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 767px) {
+  .Login-container {
+    max-width: 90%;
+    padding: 15px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  input, .Loginbutton {
+    font-size: 14px;
+  }
+
+  .avatar {
+    width: 80px;
+    height: 80px;
+  }
+} 

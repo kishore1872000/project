@@ -1,0 +1,128 @@
+
+
+.rooms-headers {
+  position: absolute; 
+  top: 10px; 
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 24px;
+  font-weight: bold;
+  color: #355c7d;
+}
+
+.rooms-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.room-card {
+  background: #fff;
+  border-radius: 20px;
+  padding: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.room-card h3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: -10px;
+  margin-left: 16px;
+  margin-bottom: 10px;
+}
+
+.temperature-widget {
+  text-align: center;
+  background: white;
+  border-radius: 50%;
+  width: 140px;
+  height: 140px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.icons {
+  margin-top: -60px;
+  margin-left: 100px;
+}
+
+.temperature-cricle {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background: conic-gradient(#888888 0deg 40deg,
+      #c71ad3 40deg 100deg,
+      #ff3366 100deg 140deg,
+      #007bff 140deg 205deg,
+      #ffcc00 205deg 280deg,
+      #888888 280deg 360deg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.room-info {
+  margin-top: 10px;
+  margin-left: -20px;
+  display: grid;
+  place-items: center;
+}
+
+@media (min-width: 1024px) {
+  .rooms-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (max-width: 1023px) {
+  .rooms-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .icons {
+    margin-left: 95px;
+  }
+}
+
+@media (max-width: 767px) {
+  .rooms-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .room-card {
+    padding: 20px;
+  }
+
+  .rooms-headers {
+    font-size: 18px;
+  }
+
+  .temperature-cricle {
+    margin: auto;
+    width: 130px;
+    height: 130px;
+  }
+
+  .temperature-widget {
+    width: 120px;
+    height: 120px;
+  }
+
+  .icons {
+    margin-left: 90px;
+  }
+  .room-info p{
+    margin-left: 10px;
+    font-size: small;
+  }
+
+  .room-card h3 {
+    font-size: 18px;
+  }
+}
